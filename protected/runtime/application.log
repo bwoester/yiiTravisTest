@@ -1,0 +1,22 @@
+2012/03/08 19:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\wamp\php\yii\tags\1.1.10\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\php\yii\tags\1.1.10\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\wamp\php\yii\tags\1.1.10\framework\web\CWebApplication.php(276): CController->run('')
+#2 D:\wamp\php\yii\tags\1.1.10\framework\web\CWebApplication.php(135): CWebApplication->runController('message')
+#3 D:\wamp\php\yii\tags\1.1.10\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\yiiTravisTest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiTravisTest/index.php?r=message
+HTTP_REFERER=http://localhost/yiiTravisTest/index.php?r=gii/controller
+---
+2012/03/08 20:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "goodbye".' in D:\wamp\php\yii\tags\1.1.10\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\php\yii\tags\1.1.10\framework\web\CController.php(271): CController->missingAction('goodbye')
+#1 D:\wamp\php\yii\tags\1.1.10\framework\web\CWebApplication.php(276): CController->run('goodbye')
+#2 D:\wamp\php\yii\tags\1.1.10\framework\web\CWebApplication.php(135): CWebApplication->runController('message/goodbye')
+#3 D:\wamp\php\yii\tags\1.1.10\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\yiiTravisTest\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiTravisTest/index.php?r=message/goodbye
+HTTP_REFERER=http://localhost/yiiTravisTest/index.php?r=message/helloWorld
+---
