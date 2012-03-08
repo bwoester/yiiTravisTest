@@ -22,14 +22,14 @@ function getDirectory( $path = '.', $level = 0 ){
             if( is_dir( "$path/$file" ) ){
             // Its a directory, so we need to keep reading down...
 
-                echo "<strong>$spaces $file</strong><br />";
+                echo "$spaces $file\n";
                 getDirectory( "$path/$file", ($level+1) );
                 // Re-call this same function but on a new directory.
                 // this is what makes function recursive.
 
             } else {
 
-                echo "$spaces $file<br />";
+                echo "$spaces $file\n";
                 // Just print out the filename
 
             }
