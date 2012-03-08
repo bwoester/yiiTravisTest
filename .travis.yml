@@ -6,7 +6,7 @@ php:
   - 5.4
 
 env:
-  - YII_VERSION=origin/1.1.10
+  - YII_VERSION=1.1.10
 
 before_script:
   - php protected/vendor/vendors.php
