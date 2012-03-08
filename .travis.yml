@@ -12,4 +12,4 @@ before_script:
   - php protected/vendor/vendors.php
 
 script:
-  - phpunit --configuration protected/tests/phpunit.xml
+  - phpunit --configuration protected/tests/phpunit.xml protected/tests/unit/MessageTest.php
