@@ -6,6 +6,7 @@ php:
   - 5.4
 
 env:
+  - YII_VERSION=1.1.9
   - YII_VERSION=1.1.10
 
 before_script:
