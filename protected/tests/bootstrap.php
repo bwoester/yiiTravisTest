@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yiit = dirname(__FILE__) . '/../vendor/yii/framework/yiit.php';
+$yiit = realpath( dirname(__FILE__) . '/../vendor/yii/framework/yiit.php' );
 if (!file_exists($yiit))
 {
   echo "failed to find '$yiit', falling back to local dev environment...";
