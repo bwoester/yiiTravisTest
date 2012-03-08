@@ -1,7 +1,11 @@
 <?php
 
 // change the following paths if necessary
-$yiit=dirname(__FILE__).'/../../../../php/yii/tags/1.1.10/framework/yiit.php';
+$yiit=dirname(__FILE__).'/../vendor/yii/framework/yiit.php';
+if (!file_exists($yiit)) {
+  $yiit = 'yii/tags/1.1.10/framework/yiit.php';
+}
+
 $config=dirname(__FILE__).'/../config/test.php';
 
 require_once($yiit);
