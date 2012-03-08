@@ -10,3 +10,6 @@ env:
 
 before_script:
   - php protected/vendor/vendors.php
+
+script:
+  - phpunit --configuration protected/tests/phpunit.xml --coverage-text
