@@ -43,11 +43,14 @@ function getDirectory( $path = '.', $level = 0 ){
 
 }
 
-getDirectory( "." );
+// getDirectory( "." );
 
 // change the following paths if necessary
 $vendorDir = dirname(__FILE__) . '/../vendor';
 $yiit = $vendorDir . '/yii/framework/yiit.php';
+
+echo file_exists($yiit) ? "found yiit.php\n" : "yiit.php missing";
+
 //if (!file_exists($yiit))
 //{
 //  echo "failed to find '$yiit', falling back to local dev environment...";
