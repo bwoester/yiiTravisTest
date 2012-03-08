@@ -7,7 +7,7 @@ if (isset($argv[1])) {
     $_SERVER['YII_VERSION'] = $argv[1];
 }
 
-$vendorDir = __DIR__;
+$vendorDir = dirname(__FILE__);
 $deps = array(
   array('yii', 'git://github.com/yiisoft/yii.git', isset($_SERVER['YII_VERSION']) ? $_SERVER['YII_VERSION'] : 'origin/master'),
 );
